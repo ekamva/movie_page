@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kino</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <section id="kino-sal"> 
+            <h1>Velkommen til det nye kinotheateret!</h1>
+            <div id="projector">
+                <img id="first_ring" src="./img/projector-ring_1.png">
+                <img id="second_ring" src="./img/projector-ring_2.png">
+                <p>Dronningens gate 45 0124 Oslo</p>    
+            </div>
+            
+        </section>
+        <section id="film-valg">
+            <h1>Se på måneds filmsutvalg:</h1>
+            <div id="movie">
+                <img id="one" src="./img/joker-1.jpg" width="auto" height="200px" alt="Joker">
+                <img id="to" src="./img/MiB.jpg" width="auto" height="200px" alt="Men in Black">
+                <img id="three" src="./img/maleficent.jpg" width="auto" height="200px" alt="Malefisent">
+                <img id="four" src="./img/fam_addams.jpg" width="auto" height="200px" alt=""> 
+            </div>
+            
+            
+        </section>
+        <section id="mat">
+            <h1>Bestill billett nå og få popkorn eller soda gratis</h1>
+            
+            <form action="#" id="billett_skjema">
+                <div>
+                 
+                    <input type="text" name="navn" id="navn" placeholder= "Navn">        
+                </div>
+                <div id="num">
+                    <input type="number" id="tlf" placeholder="Telefon">
+                    <input type="number" id="ppl" placeholder="Antall kunder">
+                </div>
+                <div>
+                   
+                    <input type="text" name="film" id="film" placeholder="Film">
+                </div>
+                <div>
+                    <input type="date">
+                </div>
+                <h2>Velg mellom drink eller popkorn</h2>
+                <div>
+                    
+                    <input type="radio" data-pic="./img/popcorn.jpg" name="bonus" id="btnPopcorn" checked>
+                    <label for="btnPopcorn">
+                        <div>Popkorn</div>
+                        <div class="check"></div>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" data-pic="./img/coca-cola.png" name="bonus" id="btnCola" checked>
+                    <label for="btnCola">
+                        <div>Drink</div>
+                        <div class="check"></div>
+                    </label>
+                </div>  
+                <div>                 
+                    <input type="radio" data-pic=" " data-pic="" name="bonus" id="btnNo" checked>
+                    <label for="btnNo">
+                        <div>Har ikke lyst på noe, takk:)</div>
+                        <div class="check"></div>
+                    </label>
+                </div>            
+                <div id="matVarer"></div>
+                <div id="send">
+                    <button type="submit" id="btnSend">Bestill</button>
+                    <button type="reset" id="btnReset">Avbryt</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
